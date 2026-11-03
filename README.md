@@ -2,7 +2,13 @@
 
 Windows 11 x64向けのコンパクトな音量ミキサーです。横スライダーでアプリの音量・ミュート、出力先・入力先を操作できます。
 
-**v0.2.14の配布準備中です。** 実機22ケースが未実施のため公開判断はHOLDで、下書きリリースは一般公開していません。公開後の配布ZIPは [Releases](https://github.com/mezon-web/SoundMixerR-Releases/releases) に掲載します。
+## ダウンロード
+
+**[SoundMixerR v0.2.15をダウンロード（Windows 11 x64・ZIP・約0.66 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.15/SoundMixerR-v0.2.15-win-x64.zip)**
+
+- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.15/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.15)
+- **[.NET 10 Desktop Runtime x64](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0)が必要です。** .NETは同梱していません。Windows 11 x64で検証しています。Windows 10・ARM64は未検証です。
+- ZIPをすべて新しいフォルダーへ展開して、`SoundMixerR.exe`を起動してください。
 
 ![SoundMixerRのデモ表示](assets/preview.png)
 
@@ -10,7 +16,7 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## 使い方
 
-1. 配布ZIPをフォルダーへ展開し、`SoundMixerR.exe` を起動します。.NETランタイムは同梱しています。
+1. .NET 10 Desktop Runtime x64をインストール後、配布ZIPをフォルダーへすべて展開し、`SoundMixerR.exe` を起動します。
 2. 横スライダーで音量を調整し、左の音声ボタンでミュートを切り替えます。青緑は設定音量、その下のオレンジは音声レベルです。
 3. 上段の機器名を押すと、Windowsの出力・入力機器を選択できます。設定から標準用と通話用のまとめ変更・個別変更を切り替えられます。
 4. アプリ名を押すと「音声の詳細」が開きます。出力先・入力先を選び、その行の「適用」で確定します。「使用状況」から設定先と使用中・待機中の機器を確認できます。
@@ -26,7 +32,7 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 - 通常表示中はタスクバーにも表示します。「最小化時にタスクバーから非表示にする」は初期値ONです。OFFでは最小化してもタスクバーに残ります。
 - Esc・トレイの「収納」でトレイへしまいます。外クリックでは収納しません。
 - ピンボタンで最前面表示を切り替えます。ヘッダーのドラッグで移動できます。
-- ヘッダーの×・Alt+F4・トレイの「終了」でアプリを終了します。
+- ヘッダーの×・Alt+F4では「終了しますか？」を表示し、OKで終了します。キャンセル・Esc・確認画面の×で戻れます。トレイ・設定の明示的な終了は確認なしで終了します。
 - 設定・詳細を開いている間はメインを操作できません。他のアプリへは切り替えられます。
 
 設定でコンパクト表示とゆったり表示を選べます。起動は手動で、スタートアップ登録機能はありません。
@@ -39,7 +45,7 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 マイク音量・ミュートは機器共通です。アプリごとのマイク音量バーは設けていません。アプリ別の機器設定はWindowsの非公開APIを使用し、対応しない環境では取得・変更エラーを表示します。
 
-検証はローカルで行い、GitHub Actionsは使用しません。隔離Windowsデスクトップの検査と、物理操作・実音・実OSのDPI変更は区別しています。詳しくは [v0.2.14の検証結果](docs/verification-v0.2.14.md) を参照してください。
+状態・UIの372項目と展開EXEの起動・終了4モードをローカル検証しました。実録音、複数機器間の実音移動、実OSのDPI変更、数時間の連続稼働などは今回未検証です。詳しくは [v0.2.15の検証結果](docs/verification-v0.2.15.md) を参照してください。GitHub Actionsは使用していません。
 
 ## このリポジトリについて
 
