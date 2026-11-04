@@ -4,15 +4,17 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## ダウンロード
 
-**[SoundMixerR v0.2.18をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.18/SoundMixerR-v0.2.18-win-x64.zip)**
+**[SoundMixerR v0.2.19をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.19/SoundMixerR-v0.2.19-win-x64.zip)**
 
-- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.18/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.18)
+- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.19/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.19)
 - .NET 10ランタイムを同梱しています。Windows 11 x64で検証しています。
 - ZIPをすべて新しいフォルダーへ展開して、`SoundMixerR.exe`を起動してください。
 
 ![SoundMixerRのデモ表示](assets/preview.png)
 
 説明用のデモ表示です。機器名・アプリ名は例です。
+
+v0.2.19では画面更新時の並べ替え・説明文・描画用オブジェクトの再生成を減らしました。同じ模擬条件で、一時メモリ割り当て量は約91%減りました。[測定条件と検証結果](docs/verification-v0.2.19.md)を参照してください。
 
 ## 使い方
 
@@ -49,7 +51,7 @@ Windowsに登録されたパッケージアプリのアイコンも取得して�
 
 マイク音量・ミュートは機器共通です。アプリごとのマイク音量バーは設けていません。アプリ別の機器設定はWindowsの非公開APIを使用し、対応しない環境では取得・変更エラーを表示します。
 
-状態・UIと展開EXEの起動・終了をローカルで検査しています。検証範囲と未確認事項は [v0.2.18の検証結果](docs/verification-v0.2.18.md) を参照してください。
+状態・UIと展開EXEの起動・終了をローカルで検査しています。検証範囲と未確認事項は [v0.2.19の検証結果](docs/verification-v0.2.19.md) を参照してください。
 
 ## このリポジトリについて
 
