@@ -4,9 +4,9 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## ダウンロード
 
-**[SoundMixerR v0.2.17をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.17/SoundMixerR-v0.2.17-win-x64.zip)**
+**[SoundMixerR v0.2.18をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.18/SoundMixerR-v0.2.18-win-x64.zip)**
 
-- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.17/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.17)
+- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.18/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.18)
 - .NET 10ランタイムを同梱しています。Windows 11 x64で検証しています。
 - ZIPをすべて新しいフォルダーへ展開して、`SoundMixerR.exe`を起動してください。
 
@@ -28,6 +28,8 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 TeamsなどのWebView2音声も、WindowsのアプリIDから登録名を取得できればアプリ名を表示します。取得できない場合はプロセス名などを表示します。
 
+Windowsに登録されたパッケージアプリのアイコンも取得して表示します。起動時は保存位置への配置を終えてから画面を表示します。
+
 ## 表示と終了
 
 - トレイの左クリック、または `Ctrl + Alt + V` で表示を切り替えます。ホットキーは設定から変更できます。
@@ -47,7 +49,7 @@ TeamsなどのWebView2音声も、WindowsのアプリIDから登録名を取得�
 
 マイク音量・ミュートは機器共通です。アプリごとのマイク音量バーは設けていません。アプリ別の機器設定はWindowsの非公開APIを使用し、対応しない環境では取得・変更エラーを表示します。
 
-状態・UIと展開EXEの起動・終了をローカルで検査しています。検証範囲と未確認事項は [v0.2.17の検証結果](docs/verification-v0.2.17.md) を参照してください。
+状態・UIと展開EXEの起動・終了をローカルで検査しています。検証範囲と未確認事項は [v0.2.18の検証結果](docs/verification-v0.2.18.md) を参照してください。
 
 ## このリポジトリについて
 
