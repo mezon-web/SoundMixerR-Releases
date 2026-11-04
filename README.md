@@ -4,10 +4,10 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## ダウンロード
 
-**[SoundMixerR v0.2.15をダウンロード（Windows 11 x64・ZIP・約0.66 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.15/SoundMixerR-v0.2.15-win-x64.zip)**
+**[SoundMixerR v0.2.17をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.17/SoundMixerR-v0.2.17-win-x64.zip)**
 
-- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.15/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.15)
-- **[.NET 10 Desktop Runtime x64](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0)が必要です。** .NETは同梱していません。Windows 11 x64で検証しています。Windows 10・ARM64は未検証です。
+- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.17/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.17)
+- .NET 10ランタイムを同梱しています。Windows 11 x64で検証しています。
 - ZIPをすべて新しいフォルダーへ展開して、`SoundMixerR.exe`を起動してください。
 
 ![SoundMixerRのデモ表示](assets/preview.png)
@@ -16,7 +16,7 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## 使い方
 
-1. .NET 10 Desktop Runtime x64をインストール後、配布ZIPをフォルダーへすべて展開し、`SoundMixerR.exe` を起動します。
+1. ZIPをすべて展開し、版番号付きフォルダーのSoundMixerR.exeを起動します。同じフォルダーの使い方.htmlで操作説明を読めます。
 2. 横スライダーで音量を調整し、左の音声ボタンでミュートを切り替えます。青緑は設定音量、その下のオレンジは音声レベルです。
 3. 上段の機器名を押すと、Windowsの出力・入力機器を選択できます。設定から標準用と通話用のまとめ変更・個別変更を切り替えられます。
 4. アプリ名を押すと「音声の詳細」が開きます。出力先・入力先を選び、その行の「適用」で確定します。「使用状況」から設定先と使用中・待機中の機器を確認できます。
@@ -25,6 +25,8 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 上段の出力・マイクを操作中に既定機器が変わるか切断された場合は、その操作を中止します。キーを離して押し直すか、新しいマウス操作から再開してください。
 
 アプリの音量・ミュート・メーターは、そのアプリの現在の出力先に対応します。別機器の待機セッションの音量は混ぜません。操作先が確認できない場合は数値を「—」と表示します。
+
+TeamsなどのWebView2音声も、WindowsのアプリIDから登録名を取得できればアプリ名を表示します。取得できない場合はプロセス名などを表示します。
 
 ## 表示と終了
 
@@ -45,7 +47,7 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 マイク音量・ミュートは機器共通です。アプリごとのマイク音量バーは設けていません。アプリ別の機器設定はWindowsの非公開APIを使用し、対応しない環境では取得・変更エラーを表示します。
 
-状態・UIの372項目と展開EXEの起動・終了4モードをローカル検証しました。実録音、複数機器間の実音移動、実OSのDPI変更、数時間の連続稼働などは今回未検証です。詳しくは [v0.2.15の検証結果](docs/verification-v0.2.15.md) を参照してください。GitHub Actionsは使用していません。
+状態・UIと展開EXEの起動・終了をローカルで検査しています。検証範囲と未確認事項は [v0.2.17の検証結果](docs/verification-v0.2.17.md) を参照してください。
 
 ## このリポジトリについて
 
