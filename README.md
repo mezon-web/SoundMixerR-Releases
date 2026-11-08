@@ -4,21 +4,21 @@ Windows 11 x64向けのコンパクトな音量ミキサーです。横スライ
 
 ## ダウンロード
 
-**[SoundMixerR v0.2.20をダウンロード（Windows 11 x64・ZIP・約72 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.20/SoundMixerR-v0.2.20-win-x64.zip)**
+**[SoundMixerR v0.2.21をダウンロード（Windows 11 x64・ZIP・約0.65 MB）](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.21/SoundMixerR-v0.2.21-win-x64.zip)**
 
-- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.20/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.20)
-- .NET 10ランタイムを同梱しています。Windows 11 x64で検証しています。
+- [SHA-256](https://github.com/mezon-web/SoundMixerR-Releases/releases/download/v0.2.21/SHA256SUMS.txt) / [更新内容](https://github.com/mezon-web/SoundMixerR-Releases/releases/tag/v0.2.21)
+- **.NET 10 Desktop Runtime（x64）が別途必要です。ランタイムは同梱していません。** [Microsoft公式ダウンロード](https://dotnet.microsoft.com/ja-jp/download/dotnet/10.0)の「.NET Desktop Runtime」からWindows x64をインストールしてください。通常の「.NET Runtime」だけでは起動できません。
 - ZIPをすべて新しいフォルダーへ展開して、`SoundMixerR.exe`を起動してください。
 
 ![SoundMixerRのデモ表示](assets/preview.png)
 
 説明用のデモ表示です。機器名・アプリ名は例です。
 
-v0.2.20ではホットキー競合時の設定保存、選択リストのEsc、ミュートの連続操作などを改善しました。同名アプリや別の出力先も見分けやすくしています。[変更内容と検証結果](docs/verification-v0.2.20.md)を参照してください。
+v0.2.21からランタイム非同梱の小さな配布へ変更しました。アプリの機能はv0.2.20を引き継いでいます。[配布構成と検証結果](docs/verification-v0.2.21.md)を参照してください。
 
 ## 使い方
 
-1. ZIPをすべて展開し、版番号付きフォルダーのSoundMixerR.exeを起動します。同じフォルダーの使い方.htmlで操作説明を読めます。
+1. .NET 10 Desktop Runtime（x64）を導入したうえでZIPをすべて展開し、版番号付きフォルダーのSoundMixerR.exeを起動します。同じフォルダーの使い方.htmlで操作説明を読めます。
 2. 横スライダーで音量を調整し、左の音声ボタンでミュートを切り替えます。青緑は設定音量、その下のオレンジは音声レベルです。
 3. 上段の機器名を押すと、Windowsの出力・入力機器を選択できます。設定から標準用と通話用のまとめ変更・個別変更を切り替えられます。
 4. アプリ名を押すと「音声の詳細」が開きます。出力先・入力先を選び、その行の「適用」で確定します。「使用状況」から設定先と使用中・待機中の機器を確認できます。
